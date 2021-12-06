@@ -1,15 +1,16 @@
 {
-  "name": "generator-helloword-teste",
+  "name": "generator-helloword-lab",
   "version": "1.0.0",
   "description": "",
   "author": "Pedro Lenonn",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "files": [
-    "generators"
+    "generators",
+    "app"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://git.tre-pa.jus.br/labs/generator-yoman-springboot-angular-lab.git"
+    "url": "git+https://github.com/pedro21900/generator-helloword-lab.git"
   },
   "engines": {
     "node": ">=12.13.0"
@@ -21,9 +22,10 @@
     "helloword-teste",
     "yeoman-generator"
   ],
-  
   "dependencies": {
+    "decamelize": "^6.0.0",
     "generator-app": "^1.0.0",
+    "uppercamelcase": "^3.0.0",
     "yeoman-generator": "^1.1.1"
   }
 }

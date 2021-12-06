@@ -1,12 +1,12 @@
 FROM node:12-alpine
 
-RUN mkdir -p ./home/generator-springboot-angular
+RUN mkdir -p /home/generator-springboot-angular
 
-WORKDIR ./home/generator-springboot-angular
+WORKDIR /home/generator-springboot-angular
 
 COPY . .
 
-RUN npm install && npm install -g yo 
+RUN npm install && npm install -g yo && npm link 
 
-CMD ["yo","helloword-teste","my-project"]
+CMD ["yo","helloword-lab","my-project"]
 
